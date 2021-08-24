@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LearnSharedPreferences">
+
+    <LinearLayout
+        android:id="@+id/namePlaceHolder"
+        android:layout_marginTop="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Name: "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_marginHorizontal="10sp"
+            android:hint="John Doe"
+            android:textSize="20sp"
+            android:textColorHint="#939393"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailPlaceHolder"
+        android:layout_margin="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/namePlaceHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Email: "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_marginHorizontal="10sp"
+            android:hint="someone@example.com"
+            android:textSize="20sp"
+            android:textColorHint="#939393"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitDetails"
+        android:text="Submit Details"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/emailPlaceHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/viewDetails"
+        android:text="View Details"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

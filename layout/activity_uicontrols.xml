@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UIControls">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:editable="false"
+        android:layout_marginTop="20sp" />
+
+    <EditText
+        android:id="@+id/editView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textColorHint="#939393"
+        android:layout_marginHorizontal="70sp"
+        android:layout_marginVertical="10sp"
+        android:hint="Editable Text"/>
+
+    <AutoCompleteTextView
+        android:id = "@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editView"
+        android:hint="Select Place"
+        android:textColorHint="#939393"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/submitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="Submit Text"
+        android:layout_below="@id/autoCompleteTextView"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/submitText" >
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:text="Radio Button 1"
+            android:layout_marginHorizontal="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:text="Radio Button 2"
+            android:layout_marginHorizontal="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_centerHorizontal="true"
+        android:text="Checkbox 1"
+        android:layout_below="@id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_centerHorizontal="true"
+        android:text="Checkbox 2"
+        android:layout_below="@id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:text="Toggle Button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/submitChoice"
+        android:text="Submit Choice"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10sp"
+        android:layout_below="@id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_below="@id/submitChoice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="70sp"
+        android:layout_marginVertical="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/submitDownload"
+        android:layout_below="@id/spinner"
+        android:layout_centerHorizontal="true"
+        android:text="Download file"
+        android:onClick="download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
